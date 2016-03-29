@@ -10,7 +10,8 @@
     AudioPlayer *audioPlayer= [[AudioPlayer alloc] init];
     [self.audioPlayer initPlayer:fileName fileExtension:fileExtension];
  3. Add "CustomAudioDelegate" delegate & method 
-    audioPlayer.audioDelegate=self;
+    
+   audioPlayer.audioDelegate=self;
     
     - (void) audioFinishPlaying;
  4. Additional method 
